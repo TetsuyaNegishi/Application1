@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
 		Log.i("TAG", "i");
 		Log.w("TAG", "w");
 		Log.e("TAG", "e");
+		
 	}
 
 	@Override
