@@ -3,6 +3,7 @@ package com.example.application1;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,9 +24,15 @@ public class MainActivity extends Activity {
 		button.setOnClickListener(new OnClickListener() {			
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(context, "Touch", Toast.LENGTH_SHORT).show();
+				Toast.makeText(getApplicationContext(), "Touch", Toast.LENGTH_SHORT).show();
 			}
 		});
+		
+		Log.v("TAG", "v");
+		Log.d("TAG", "d");
+		Log.i("TAG", "i");
+		Log.w("TAG", "w");
+		Log.e("TAG", "e");
 	}
 
 	@Override
